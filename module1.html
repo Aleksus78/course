@@ -1,1 +1,125 @@
-<!DOCTYPE html> <html lang="ru"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Модуль 1 - Основы</title> <style> body { margin: 20px; font-family: Arial, sans-serif; } h1, h2 { color: #333; } .video-container { margin-bottom: 20px; max-width: 800px; } .video-container iframe { width: 100%; height: 450px; border: none; } .video-container p { margin: 5px 0; } nav { margin-bottom: 20px; } nav a { margin-right: 15px; text-decoration: none; color: #0066cc; } nav a:hover { text-decoration: underline; } </style> </head> <body> <nav> <a href="index.html">Главная (Zoom)</a> <a href="module1.html">Модуль 1</a> <a href="module2.html">Модуль 2</a> <a href="module3.html">Модуль 3</a> <a href="module4.html">Модуль 4</a> <a href="module5.html">Модуль 5</a> <a href="module6.html">Модуль 6</a> <a href="module7.html">Модуль 7</a> <a href="module8.html">Модуль 8</a> </nav> <h1>Модуль 1. Основы</h1> <h2>Тема 1.1. Временная почта, менеджер паролей и полезные расширения браузера</h2> <div class="video-container"> <iframe src="https://kinescope.io/embed/5RZwRP5LF2horDCPurhV49" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe> <p>Часть 1</p> </div> <div class="video-container"> <iframe src="https://kinescope.io/embed/dgyhHLNd9kTbGF5UxLRNpn" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe> <p>Часть 2</p> </div> <h2>Тема 1.2. VPN</h2> <div class="video-container"> <iframe src="https://kinescope.io/embed/ffify78nSCr119he1fpchC" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe> </div> <h2>Протоколы VPN</h2> <div class="video-container"> <iframe src="https://kinescope.io/embed/wedvuf71VKREsMbnVAiRTk" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe> </div> <h2>Тема 1.4. Устройство компьютера</h2> <div class="video-container"> <iframe src="https://kinescope.io/embed/aHsQs1XRWBYM8TGetFqpSZ" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe> <p>1.4.1</p> </div> <div class="video-container"> <iframe src="https://kinescope.io/embed/iV3nuN73rBiBqqxWA2iR3i" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe> <p>1.4.2</p> </div> </body> </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модуль 1 - Основы</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background-color: #f4f4f4; 
+        }
+        h1, h2 { color: #333; }
+        .video-container { 
+            margin: 20px auto; 
+            max-width: 800px; 
+        }
+        .video-container iframe { 
+            width: 100%; 
+            height: 450px; 
+            border: none; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+        .video-container p { margin: 5px 0; color: #555; }
+        
+        /* Навигация */
+        nav { 
+            background-color: #0066cc; 
+            padding: 10px; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+        }
+        .nav-container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            position: relative; 
+        }
+        .dropdown { 
+            display: inline-block; 
+            position: relative; 
+        }
+        .dropdown-btn { 
+            color: white; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            cursor: pointer; 
+        }
+        .dropdown-btn:hover { background-color: #005bb5; }
+        .dropdown-content { 
+            display: none; 
+            position: absolute; 
+            background-color: #fff; 
+            min-width: 200px; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+            border-radius: 4px; 
+            z-index: 1; 
+        }
+        .dropdown-content a { 
+            color: #333; 
+            padding: 10px 15px; 
+            text-decoration: none; 
+            display: block; 
+        }
+        .dropdown-content a:hover { background-color: #f1f1f1; }
+        .dropdown:hover .dropdown-content { display: block; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="dropdown">
+                <span class="dropdown-btn">Навигация</span>
+                <div class="dropdown-content">
+                    <a href="index.html">Главная (Zoom)</a>
+                    <a href="module1.html">Модуль 1 - Основы</a>
+                    <a href="module2.html">Модуль 2 - Принципы и техники</a>
+                    <a href="module3.html">Модуль 3 - Веб-приложения</a>
+                    <a href="module4.html">Модуль 4 - Клиент-сервер</a>
+                    <a href="module5.html">Модуль 5 - Статический анализ</a>
+                    <a href="module6.html">Модуль 6 - Архитектура и БД</a>
+                    <a href="module7.html">Модуль 7 - Мобильные приложения</a>
+                    <a href="module8.html">Модуль 8 - Автоматизация</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Модуль 1. Основы</h1>
+
+    <h2>Тема 1.1. Временная почта, менеджер паролей и полезные расширения браузера</h2>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/5RZwRP5LF2horDCPurhV49" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+        <p>Часть 1</p>
+    </div>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/dgyhHLNd9kTbGF5UxLRNpn" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+        <p>Часть 2</p>
+    </div>
+
+    <h2>Тема 2.1. VPN</h2>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/ffify78nSCr119he1fpchC" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+    </div>
+
+    <h2>Протоколы VPN</h2>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/wedvuf71VKREsMbnVAiRTk" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+    </div>
+
+    <h2>Тема 1.4. Устройство компьютера</h2>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/aHsQs1XRWBYM8TGetFqpSZ" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+        <p>1.4.1</p>
+    </div>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/iV3nuN73rBiBqqxWA2iR3i" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+        <p>1.4.2</p>
+    </div>
+</body>
+</html>
