@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модуль 5 - Статический анализ и инспекции</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background-color: #f4f4f4; 
+        }
+        h1, h2 { color: #333; }
+        .video-container { 
+            margin: 20px auto; 
+            max-width: 800px; 
+        }
+        .video-container iframe { 
+            width: 100%; 
+            height: 450px; 
+            border: none; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+        .video-container p { margin: 5px 0; color: #555; }
+        
+        /* Навигация */
+        nav { 
+            background-color: #0066cc; 
+            padding: 10px; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+        }
+        .nav-container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            position: relative; 
+        }
+        .dropdown { 
+            display: inline-block; 
+            position: relative; 
+        }
+        .dropdown-btn { 
+            color: white; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            cursor: pointer; 
+        }
+        .dropdown-btn:hover { background-color: #005bb5; }
+        .dropdown-content { 
+            display: none; 
+            position: absolute; 
+            background-color: #fff; 
+            min-width: 200px; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+            border-radius: 4px; 
+            z-index: 1; 
+        }
+        .dropdown-content a { 
+            color: #333; 
+            padding: 10px 15px; 
+            text-decoration: none; 
+            display: block; 
+        }
+        .dropdown-content a:hover { background-color: #f1f1f1; }
+        .dropdown:hover .dropdown-content { display: block; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="dropdown">
+                <span class="dropdown-btn">Навигация</span>
+                <div class="dropdown-content">
+                    <a href="index.html">Главная (Zoom)</a>
+                    <a href="module1.html">Модуль 1 - Основы</a>
+                    <a href="module2.html">Модуль 2 - Принципы и техники</a>
+                    <a href="module3.html">Модуль 3 - Веб-приложения</a>
+                    <a href="module4.html">Модуль 4 - Клиент-сервер</a>
+                    <a href="module5.html">Модуль 5 - Статический анализ</a>
+                    <a href="module6.html">Модуль 6 - Архитектура и БД</a>
+                    <a href="module7.html">Модуль 7 - Мобильные приложения</a>
+                    <a href="module8.html">Модуль 8 - Автоматизация</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Модуль 5. Статический анализ и инспекции</h1>
+
+    <h2>Тема 5.1. Покрытие кода</h2>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/bakk4B48q9pdZcsWzYz31h" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+        <p>5.1.1</p>
+    </div>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/7v6m5UGtGH4TdXNKk9hpHZ" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+        <p>5.1.2</p>
+    </div>
+
+    <h2>Тема 5.2. Техники и место применения статического анализа</h2>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/d5Bkh8TJRJqLTM2izmyBMd" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+        <p>5.2.1</p>
+    </div>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/uKtg1vm9vreKRQGcu5jcqd" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+        <p>5.2.2</p>
+    </div>
+
+    <h2>Тема 5.3. Анализ общего количества ошибок в ИС с помощью Capture-Recapture анализа</h2>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/p2pkpCdpyocSoVG55ghj2s" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+        <p>5.3.1</p>
+    </div>
+    <div class="video-container">
+        <iframe src="https://kinescope.io/embed/0AWq8WK3qHd5nXz2ULudcR" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;" allowfullscreen></iframe>
+        <p>5.3.2</p>
+    </div>
+</body>
+</html>
